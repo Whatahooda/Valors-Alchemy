@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Alchemy_Circle.name"
+  },
+  "Quality": "Technical",
+  "BlockType": {
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/flat_block.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Alchemy/Circles/Chalk/Chalk_Circle.png",
+        "Weight": 1
+      }
+    ],
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Material": "Empty",
+    "HitboxType": "Block_Flat",
+    "BlockParticleSetId": "Dust",
+    "CustomModelScale": 1,
+    "Gathering": {
+      "Soft": {
+        "DropList": {}
+      }
+    },
+    "VariantRotation": "NESW",
+    "RotationYawPlacementOffset": "OneEighty"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      30,
+      30,
+      0
+    ],
+    "Translation": [
+      0,
+      0
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Alchemy_Circle_Chalk.png",
+  "Tags": {
+    "Type": [
+      "Alchemy Circle"
+    ],
+    "Family": [
+      "Chalk"
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  }
+}

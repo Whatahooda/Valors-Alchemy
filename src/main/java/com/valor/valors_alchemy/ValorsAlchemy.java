@@ -1,4 +1,4 @@
-package com.example.valors_alchemy;
+package com.valor.valors_alchemy;
 
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;

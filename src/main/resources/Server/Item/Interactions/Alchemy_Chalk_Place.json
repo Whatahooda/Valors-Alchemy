@@ -1,0 +1,42 @@
+{
+  "Type": "BlockCondition",
+  "Matchers": [
+    {
+      "Block": {
+        "Tag": "Alchemy Circle"
+      }
+    },
+    {
+      "Block": {
+        "Tag": "Chalk"
+      }
+    }
+  ],
+  "Failed": {
+    "Type": "PlaceBlock",
+    "Effects": {
+      "WaitForAnimationToFinish": false,
+      "ItemAnimationId": "Build"
+    },
+    "BlockTypeToPlace": "Alchemy_Circle_Chalk",
+    "RemoveItemInHand": false
+  },
+  "Next": {
+    "Type": "ChangeBlock",
+    "Changes": {
+      "Alchemy_Circle_Chalk": "Alchemy_Circle_Chalk_Air",
+      "Alchemy_Circle_Chalk_Air": "Alchemy_Circle_Chalk_Earth",
+      "Alchemy_Circle_Chalk_Earth": "Alchemy_Circle_Chalk_Fire",
+      "Alchemy_Circle_Chalk_Fire": "Alchemy_Circle_Chalk_Water",
+      "Alchemy_Circle_Chalk_Water": "Alchemy_Circle_Chalk"
+    },
+    "Effects": {
+      "WaitForAnimationToFinish": false,
+      "ItemAnimationId": "Build"
+    }
+  },
+  "Effects": {
+    "WorldSoundEventId": "SFX_Scribble",
+    "LocalSoundEventId": "SFX_Scribble_Local"
+  }
+}

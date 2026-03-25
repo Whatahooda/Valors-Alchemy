@@ -1,0 +1,47 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Alchemy_Chalk_Stick.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Chalk_Stick.png",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "Model": "Items/Tools/Alchemy/Chalk_Stick.blockymodel",
+  "Texture": "Items/Tools/Alchemy/Chalk_Stick_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
+  "FuelQuality": 4,
+  "IconProperties": {
+    "Scale": 1.7,
+    "Rotation": [
+      67,
+      330,
+      0
+    ],
+    "Translation": [
+      0.5,
+      1
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Tool"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Items_Foliage",
+  "DropOnDeath": true,
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Root_Alchemy_Chalk_Place"
+  }
+}

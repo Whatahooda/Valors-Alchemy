@@ -1,0 +1,37 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Alchemy_Circle_Chalk_Fire.name"
+  },
+  "Quality": "Technical",
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Alchemy/Circles/Chalk/Chalk_Circle_Fire.png",
+        "Weight": 1
+      }
+    ],
+    "CustomModel": "Blocks/flat_block.blockymodel"
+  },
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      30,
+      30,
+      0
+    ],
+    "Translation": [
+      0,
+      0
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Alchemy_Circle_Chalk_Fire.png",
+  "Tags": {
+    "Type": [
+      "Alchemy Circle"
+    ],
+    "Family": [
+      "Chalk"
+    ]
+  },
+  "Parent": "Alchemy_Circle_Chalk"
+}

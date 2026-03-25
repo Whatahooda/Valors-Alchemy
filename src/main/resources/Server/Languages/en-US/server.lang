@@ -1,1 +1,6 @@
-items.Example_Block.name=Example Block
+items.Alchemy_Chalk_Stick.name=Chalk Stick
+items.Alchemy_Circle.name=Chalk Alchemy Circle
+items.Alchemy_Circle_Chalk_Air.name=Air Chalk Circle
+items.Alchemy_Circle_Chalk_Earth.name=Earth Chalk Circle
+items.Alchemy_Circle_Chalk_Fire.name=Fire Chalk Circle
+items.Alchemy_Circle_Chalk_Water.name=Water Chalk Circle
