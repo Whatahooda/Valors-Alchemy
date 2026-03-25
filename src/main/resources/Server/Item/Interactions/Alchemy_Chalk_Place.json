@@ -16,7 +16,10 @@
     "Type": "PlaceBlock",
     "Effects": {
       "WaitForAnimationToFinish": false,
-      "ItemAnimationId": "Build"
+      "ItemAnimationId": "Build",
+      "WorldSoundEventId": "SFX_Scribble",
+      "LocalSoundEventId": "SFX_Scribble_Local",
+      "ClearSoundEventOnFinish": false
     },
     "BlockTypeToPlace": "Alchemy_Circle_Chalk",
     "RemoveItemInHand": false
@@ -32,11 +35,11 @@
     },
     "Effects": {
       "WaitForAnimationToFinish": false,
-      "ItemAnimationId": "Build"
-    }
-  },
-  "Effects": {
-    "WorldSoundEventId": "SFX_Scribble",
-    "LocalSoundEventId": "SFX_Scribble_Local"
+      "ItemAnimationId": "Build",
+      "WorldSoundEventId": "SFX_Scribble",
+      "LocalSoundEventId": "SFX_Scribble_Local",
+      "ClearSoundEventOnFinish": false
+    },
+    "RunTime": 0.2
   }
 }
