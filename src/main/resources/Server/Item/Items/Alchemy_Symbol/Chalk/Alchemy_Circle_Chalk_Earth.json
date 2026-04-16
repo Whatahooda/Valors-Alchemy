@@ -26,7 +26,8 @@
   "Icon": "Icons/ItemsGenerated/Alchemy_Circle_Chalk_Earth.png",
   "Tags": {
     "Type": [
-      "Alchemy Circle"
+      "Alchemy_Circle",
+      "Item_Frame"
     ],
     "Family": [
       "Chalk"

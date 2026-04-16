@@ -25,21 +25,126 @@
     "RemoveItemInHand": false
   },
   "Next": {
-    "Type": "ChangeBlock",
-    "Changes": {
-      "Alchemy_Circle_Chalk": "Alchemy_Circle_Chalk_Air",
-      "Alchemy_Circle_Chalk_Air": "Alchemy_Circle_Chalk_Earth",
-      "Alchemy_Circle_Chalk_Earth": "Alchemy_Circle_Chalk_Fire",
-      "Alchemy_Circle_Chalk_Fire": "Alchemy_Circle_Chalk_Water",
-      "Alchemy_Circle_Chalk_Water": "Alchemy_Circle_Chalk"
+    "Type": "BlockCondition",
+    "Matchers": [
+      {
+        "Block": {
+          "Id": "Alchemy_Circle_Chalk"
+        }
+      }
+    ],
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "BreakBlock",
+          "RunTime": 0.001
+        },
+        {
+          "Type": "PlaceBlock",
+          "BlockTypeToPlace": "Alchemy_Circle_Chalk_Air"
+        }
+      ]
     },
-    "Effects": {
-      "WaitForAnimationToFinish": false,
-      "ItemAnimationId": "Build",
-      "WorldSoundEventId": "SFX_Scribble",
-      "LocalSoundEventId": "SFX_Scribble_Local",
-      "ClearSoundEventOnFinish": false
-    },
-    "RunTime": 0.2
-  }
+    "Failed": {
+      "Type": "BlockCondition",
+      "Matchers": [
+        {
+          "Block": {
+            "Id": "Alchemy_Circle_Chalk_Air"
+          }
+        }
+      ],
+      "Next": {
+        "Type": "Serial",
+        "Interactions": [
+          {
+            "Type": "BreakBlock",
+            "RunTime": 0.001
+          },
+          {
+            "Type": "PlaceBlock",
+            "BlockTypeToPlace": "Alchemy_Circle_Chalk_Earth"
+          }
+        ]
+      },
+      "Failed": {
+        "Type": "BlockCondition",
+        "Matchers": [
+          {
+            "Block": {
+              "Id": "Alchemy_Circle_Chalk_Earth"
+            }
+          }
+        ],
+        "Next": {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "BreakBlock",
+              "RunTime": 0.001
+            },
+            {
+              "Type": "PlaceBlock",
+              "BlockTypeToPlace": "Alchemy_Circle_Chalk_Fire"
+            }
+          ]
+        },
+        "Failed": {
+          "Type": "BlockCondition",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Alchemy_Circle_Chalk_Fire"
+              }
+            }
+          ],
+          "Next": {
+            "Type": "Serial",
+            "Interactions": [
+              {
+                "Type": "BreakBlock",
+                "RunTime": 0.001
+              },
+              {
+                "Type": "PlaceBlock",
+                "BlockTypeToPlace": "Alchemy_Circle_Chalk_Water"
+              }
+            ]
+          },
+          "Failed": {
+            "Type": "BlockCondition",
+            "Matchers": [
+              {
+                "Block": {
+                  "Id": "Alchemy_Circle_Chalk_Water"
+                }
+              }
+            ],
+            "Next": {
+              "Type": "Serial",
+              "Interactions": [
+                {
+                  "Type": "BreakBlock",
+                  "RunTime": 0.001
+                },
+                {
+                  "Type": "PlaceBlock",
+                  "BlockTypeToPlace": "Alchemy_Circle_Chalk"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "Effects": {
+    "WaitForAnimationToFinish": false,
+    "ItemAnimationId": "Build",
+    "WorldSoundEventId": "SFX_Scribble",
+    "LocalSoundEventId": "SFX_Scribble_Local",
+    "ClearSoundEventOnFinish": false
+  },
+  "RunTime": 0.01
 }

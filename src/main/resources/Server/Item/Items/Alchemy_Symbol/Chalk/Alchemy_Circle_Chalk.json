@@ -30,7 +30,21 @@
       }
     },
     "VariantRotation": "NESW",
-    "RotationYawPlacementOffset": "OneEighty"
+    "RotationYawPlacementOffset": "OneEighty",
+    "InteractionHint": "server.interactionHints.alchemyCircle",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ItemFrameInteraction",
+            "UseLatestTarget": true
+          }
+        ]
+      }
+    },
+    "BlockEntity": {
+      "Components": {}
+    }
   },
   "PlayerAnimationsId": "Item",
   "IconProperties": {
@@ -48,7 +62,8 @@
   "Icon": "Icons/ItemsGenerated/Alchemy_Circle_Chalk.png",
   "Tags": {
     "Type": [
-      "Alchemy Circle"
+      "Alchemy_Circle",
+      "Item_Frame"
     ],
     "Family": [
       "Chalk"
@@ -57,5 +72,6 @@
   "Interactions": {
     "Primary": "Block_Primary",
     "Secondary": "Block_Secondary"
-  }
+  },
+  "Set": "ItemFrames_Item_Frame"
 }
