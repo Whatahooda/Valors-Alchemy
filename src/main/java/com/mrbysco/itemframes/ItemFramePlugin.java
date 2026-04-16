@@ -2,10 +2,8 @@ package com.mrbysco.itemframes;
 
 import com.hypixel.hytale.component.ComponentRegistryProxy;
 import com.hypixel.hytale.component.ComponentType;
-import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
-import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.mrbysco.itemframes.component.BoundEntityComponent;
@@ -13,8 +11,6 @@ import com.mrbysco.itemframes.component.ItemFrameComponent;
 import com.mrbysco.itemframes.interaction.ItemFrameEntityInteraction;
 import com.mrbysco.itemframes.interaction.ItemFrameInteraction;
 import com.mrbysco.itemframes.system.ItemFrameSystems;
-
-import javax.annotation.Nonnull;
 
 public class ItemFramePlugin{
 	private static ComponentType<EntityStore, ItemFrameComponent> itemFrameComponent;
